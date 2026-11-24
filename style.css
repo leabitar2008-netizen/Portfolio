@@ -370,6 +370,29 @@ nav a.active {
     text-decoration: underline;
 }
 
+.choix-langue {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.choix-langue button {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.choix-langue button:hover,
+.choix-langue button.active {
+    background-color: #2563eb;
+    color: white;
+}
+
 @media (max-width: 600px) {
 
     h1 {
