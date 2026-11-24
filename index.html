@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mon Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
 
     
@@ -38,40 +39,321 @@
 
     <main>
 
-        <section id="accueil">
+        <section id="accueil">   
+            <img src="profil.jpg" alt="Photo de profil" class="photo-profil">
+
             <h2>Bonjour, je suis Léa !</h2>
-            <p>Étudiante en double licence Mathématiques-Informatique à l'Université Paris Cité.</p>
-            <p>Passionnée par les mathématiques, l'intelligence artificielle et les nouvelles technologies.</p>
-            <p>À la recherche d'un stage pour juin 2027.</p>
+
+            <h3 class="sous-titre">
+                Étudiante en Mathématiques & Informatique
+            </h3>
+
+            <p class="universite">Université Paris Cité</p>
+
+            <p class="description">
+                Passionnée par l'intelligence artificielle,
+                la programmation et les nouvelles technologies.
+            </p>
+
+            <p class="disponibilite">
+                À la recherche d'un stage à partir de juin 2027
+            </p>
+
+            <div class="boutons-accueil">
+
+                <a href="#projets" class="bouton-principal"
+                onclick="afficherSection('projets'); return false;">
+                <i class="fa-solid fa-folder-open"></i>
+                    Découvrir mes projets
+                </a>
+
+                <a href="CV.pdf" class="bouton-secondaire" download>
+                    <i class="fa-solid fa-download"></i>
+                    Télécharger mon CV
+                </a>
+
+            </div>
+
+            <div class="reseaux-sociaux">
+
+                <a href="https://www.linkedin.com/in/léa-b-32a15a430" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/leabitar2008-netizen" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="mailto:leabitar2008@gmail.com" aria-label="Me contacter par email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+            </div>
+
         </section>
 
          <section id="presentation">
-            <h2>À propos de moi</h2>
-            <p>Je suis étudiante en première année de double licence
-            Mathématiques-Informatique à l'Université Paris Cité.</p>
+
+        <h2>À propos de moi</h2>
+
+        <div class="bloc-presentation">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Mon parcours académique</h3>
+
+            <p>
+                Actuellement étudiante en première année de double
+                licence Mathématiques-Informatique à l'Université
+                Paris Cité, je développe mes connaissances en
+                programmation, en algorithmique et en mathématiques.
+            </p>
+        </div>
+
+        <div class="bloc-presentation">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Mes motivations</h3>
+
+            <p>
+                Passionnée par les nouvelles technologies et
+                l'intelligence artificielle, j'aime comprendre
+                le fonctionnement des systèmes informatiques et
+                mettre en pratique mes connaissances à travers
+                des projets personnels. Je développe notamment
+                un jeu vidéo avec Unity ainsi que mon propre portfolio.
+            </p>
+        </div>
+
+        <div class="bloc-presentation">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Mes ambitions professionnelles</h3>
+
+            <p>
+                Je souhaite approfondir mes compétences en
+                informatique et en intelligence artificielle,
+                découvrir le monde professionnel et participer
+                à des projets innovants. Je suis actuellement
+                à la recherche d'un stage à partir de juin 2027
+                afin de mettre en pratique mes connaissances
+                et d'acquérir de nouvelles compétences.
+            </p>
+        </div>
+
         </section>
 
         <section id="competences">
             <h2>Mes compétences</h2>
-            <p>Java, Linux, HTML et Mathématiques.</p>
+
+            <div class="grille-competences">
+
+                <div class="carte">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Programmation</h3>
+                    <p>Java</p>
+                    <p>Python</p>
+                    <p>Langage C</p>
+                    <p>C#</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Développement web</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h3>Systèmes</h3>
+                    <p>Linux</p>
+                    <p>Terminal</p>
+                </div>
+
+                <div class="carte">
+                    <i class="fa-solid fa-calculator"></i>
+                    <h3>Mathématiques</h3>
+                    <p>Algèbre</p>
+                    <p>Analyse</p>
+                    <p>Logique</p>
+                </div>
+
+
+            </div>
         </section>
 
-         <section id="interets">
-            <h2> Mes centres d'intérêt</h2>
-             <p>Je m'intéresse à l'IA, aux nouvelles technologies et aux Maths.</p>
+        <section id="interets">
+
+        <h2>Mes centres d'intérêt</h2>
+
+        <div class="grille-competences">
+
+            <div class="carte">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Intelligence artificielle</h3>
+                <p>Découvrir les innovations et les applications de l'IA.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Création de sites web</h3>
+                <p>Concevoir des sites web modernes et interactifs.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Création de jeux vidéo</h3>
+                <p>Associer programmation et créativité à travers Unity.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-language"></i>
+                <h3>Langues</h3>
+                <p>Français : Bilingue</p>
+                <p>Anglais : IELTS 6.5/9</p>
+                <p>Arabe : Courant</p>
+                <p>Espagnol : B2 (niveau estimé)</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-person"></i>
+                <h3>Danse</h3>
+                <p>Développer ma créativité et mon expression artistique.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-music"></i>
+                <h3>Piano</h3>
+                <p>Explorer la musique à travers la pratique du piano.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-guitar"></i>
+                <h3>Guitare</h3>
+                <p>Développer ma créativité musicale.</p>
+            </div>
+
+            <div class="carte">
+                <i class="fa-solid fa-plane"></i>
+                <h3>Voyages et cultures</h3>
+                <p>Découvrir de nouveaux pays, leurs cultures et leurs traditions.</p>
+            </div>
+
+
+        </div>
+
         </section>
 
         <section id="projets">
+
             <h2>Mes projets</h2>
-            <h3>Mon portfolio personnel</h3>
-            <p>Création de mon premier site internet.</p>
+
+            <div class="carte-projet">
+                <i class="fa-solid fa-gamepad"></i>
+
+                <h3>SubwayRunner</h3>
+
+                <span class="statut-projet">En cours de développement</span>
+
+                 <p>Développement d'un jeu vidéo de type Endless Runner
+                avec Unity et le langage C#. Ce projet me permet
+                d'approfondir mes compétences en programmation
+                et en création de jeux vidéo.</p>
+
+                <div class="technologies">
+                    <span>Unity</span>
+                    <span>C#</span>
+                </div>
+            </div>
+
+            <div class="carte-projet">
+                <i class="fa-solid fa-globe"></i>
+
+                <h3>Portfolio personnel</h3>
+
+                <span class="statut-projet termine">Terminé</span>
+
+                 <p>Création de mon premier site web personnel
+                pour présenter mon parcours académique,
+                mes compétences et mes projets.</p>
+
+            <div class="technologies">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+
         </section>
 
         <section id="contact">
+
             <h2>Contact</h2>
-            <p>Mes coordonnées professionnelles.</p>
+
+            <p class="intro-contact">
+                Vous souhaitez échanger avec moi, me proposer un stage
+                ou discuter d'un projet ? N'hésitez pas à me contacter !
+            </p>
+
+            <p class="disponibilite">
+                À la recherche d'un stage à partir de juin 2027
+            </p>
+
+            <div class="carte-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:leabitar2008@gmail.com">leabitar2008@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="carte-contact">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h3>Téléphone</h3>
+                    <a href="tel:+33767542737">07 67 54 27 37</a>
+                </div>
+            </div>
+
+            <div class="carte-contact">
+                <i class="fa-brands fa-linkedin"></i>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/léa-b-32a15a430" target="_blank"
+                    rel="noopener noreferrer">
+                        Découvrir mon profil professionnel
+                    </a>
+                </div>
+            </div>
+            <div class="carte-contact">
+                <i class="fa-brands fa-github"></i>
+                <div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/leabitar2008-netizen" target="_blank"
+                        rel="noopener noreferrer">
+                            Découvrir mes projets informatiques
+                    </a>
+                </div>
+            </div>
+
+        <div class="carte-contact">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+                <h3>Localisation</h3>
+                <p>Paris, France</p>
+            </div>
+        </div>
+
+        <div class="boutons-accueil">
+            <a href="CV.pdf" class="bouton-principal" download>
+                <i class="fa-solid fa-download"></i>
+                Télécharger mon CV
+            </a>
+        </div>
+
         </section>
 
+        
     </main>
 
     <footer>
