@@ -104,9 +104,9 @@ const traductions = {
         "Combining programming and creativity through Unity.",
 
     "Langues": "Languages",
-    "Français : Bilingue": "French: Bilingual",
+    "Français : Langue maternelle": "French:  Native",
     "Anglais : IELTS 6.5/9": "English: IELTS 6.5/9",
-    "Arabe : Courant": "Arabic: Fluent",
+    "Arabe : Langue maternelle": "Arabic: Native",
     "Espagnol : B2 (niveau estimé)": "Spanish: B2 (estimated level)",
 
     "Danse": "Dance",
